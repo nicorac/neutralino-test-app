@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Neutralino.js server",
+      "type": "npm",
+      "script": "start:neu",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^neu:",
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "Starting process:",
+          },
+          "endsPattern": {
+            "regexp": "neu CLI connected with the application\\.$",
+          }
+        },
+      }
+    },
+  ]
+}

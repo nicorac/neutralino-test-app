@@ -1,0 +1,15 @@
+{
+  "name": "js.neutralino.sample",
+  "version": "0.0.0",
+  "scripts": {
+    "start:neu": "npx neu run -- --mode=cloud",
+    "start:neu:window": "npx neu run -- --mode=window",
+    "build": "neu build",
+    "install-neutralino-cli": "npm install -g @neutralinojs/neu"
+  },
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

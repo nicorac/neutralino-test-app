@@ -1,0 +1,24 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // debug Neu app in Chrome
+      "name": "Debug (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "url": "http://localhost:8080/",
+      "preLaunchTask": "Run Neutralino.js server",
+    },
+    {
+      // debug Neu app in native Window
+      "name": "Debug (Native win)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceRoot}",
+      "runtimeArgs": [ "run", "start:neu:window" ],
+    },
+  ]
+}
